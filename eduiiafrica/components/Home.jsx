@@ -1,22 +1,15 @@
-"use client";
-import Navbar from "@/components/Navbar";
-import BenefitsSection from "@/components/BenefitsSection";
-import About from "@/components/About";
-export default function LandingPage() {
+const Home = () => {
   return (
-    <div className="relative min-h-screen text-white">
+    <div>
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center brightness-75"
+        style={{ backgroundImage: "url('/images/hero.jpg')" }}
+      ></div>
+
       {/* Overlay for Readability */}
       <div className="relative z-10">
         <section className="flex items-center min-h-screen">
-          {/* Background Image */}
-          <div
-            className="absolute inset-0 bg-cover bg-center brightness-75"
-            style={{ backgroundImage: "url('/images/hero.jpg')" }}
-          >
-                      <Navbar />
-
-          </div>
-
           {/* Full Height Semi-Transparent Card */}
           <div className="bg-black/50 h-screen w-1/2 flex flex-col justify-center items-center p-10 backdrop-blur-md">
             <div className="space-y-6 max-w-lg text-center">
@@ -35,9 +28,7 @@ export default function LandingPage() {
           </div>
         </section>
       </div>
-      <BenefitsSection />
-
-      <About />
     </div>
   );
-}
+};
+export default Home;

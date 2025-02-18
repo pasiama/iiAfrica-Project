@@ -2,20 +2,131 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Colors */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --electric-blue: #007BFF;
+  --neon-green: #39FF14;
+  --gradient-bg: linear-gradient(135deg, var(--electric-blue), var(--neon-green));
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Global Styles *rgb(10, 10, 10)
+body {
+  @apply bg-gray-900 text-white font-sans;
+}
+
+/* Buttons */
+.btn {
+  @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-[var(--electric-blue)] text-white hover:bg-blue-600;
+}
+
+.btn-secondary {
+  @apply bg-[var(--neon-green)] text-gray-900 hover:bg-green-500;
+}
+
+.btn-gradient {
+  @apply bg-[var(--gradient-bg)] text-white hover:opacity-80;
+}
+
+.btn-gradient {
+  background: var(--gradient-bg);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-gradient:hover {
+  opacity: 0.8;
+}
+
+.btn-outline {
+  border: 2px solid var(--neon-green);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background: var(--neon-green);
+  color: black;
+}
+
+.glow-effect {
+  background: var(--gradient-bg);
+  box-shadow: 0px 0px 20px var(--electric-blue);
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 10px var(--electric-blue);
+  }
+  100% {
+    box-shadow: 0px 0px 30px var(--electric-blue);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Cards */
+.card {
+  @apply bg-gray-800 rounded-xl p-6 shadow-lg transition-all duration-300;
+}
+
+.card-hover:hover {
+  @apply shadow-xl scale-105;
+}
+
+/* Fonts */
+.font-heading {
+  @apply text-3xl font-bold text-[var(--electric-blue)];
+}
+
+.font-subheading {
+  @apply text-xl font-medium text-[var(--neon-green)];
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 10px var(--electric-blue); }
+  50% { box-shadow: 0 0 20px var(--neon-green); }
+}
+
+.glow-effect {
+  animation: pulseGlow 1.5s infinite alternate;
+}
+
+/* Component Styling */
+.navbar {
+  @apply flex items-center justify-end mx-8 p-4 bg-transparent shadow-md;
+}
+
+.footer {
+  @apply p-6 text-center text-gray-400;
 }
