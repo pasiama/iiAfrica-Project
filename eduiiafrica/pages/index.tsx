@@ -2,6 +2,11 @@
 import Navbar from "@/components/Navbar";
 import BenefitsSection from "@/components/BenefitsSection";
 import About from "@/components/About";
+import EducationLevels from "@/components/EducationLevels"
+import OurTeam from "@/components/OurTeam"
+
+
+
 export default function LandingPage() {
   return (
     <div className="relative min-h-screen text-white">
@@ -38,6 +43,8 @@ export default function LandingPage() {
       <BenefitsSection />
 
       <About />
+      <EducationLevels/>
+      <OurTeam/>
     </div>
   );
 }
