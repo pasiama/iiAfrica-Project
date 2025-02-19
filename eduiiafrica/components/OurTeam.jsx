@@ -1,38 +1,21 @@
 const OurTeam=()=>{
       const teamMembers=[
+            
             {
                   name: "Adam Brick",
                   role: "A teacher who inspires others to be a better version of thenselves",
-                  img: "",
-                  stars : 5
-            },
-            {
-                  name: "Adam Brick",
-                  role: "A teacher who inspires others to be a better version of thenselves",
-                  img: "",
-                  stars : 4
-            },
-            {
-                  name: "Adam Brick",
-                  role: "A teacher who inspires others to be a better version of thenselves",
-                  img: "",
-                  stars : 3
-            },
-            {
-                  name: "Adam Brick",
-                  role: "A teacher who inspires others to be a better version of thenselves",
-                  img: "",
+                  img: "/images/headshoot3.png",
                   stars : 2
             },  {
                   name: "Adam Brick",
                   role: "A teacher who inspires others to be a better version of thenselves",
-                  img: "",
+                  img: "/images/headshoot3.png",
                   stars : 1
             }, 
              {
                   name: "Adam Brick",
                   role: "A teacher who inspires others to be a better version of thenselves",
-                  img: "",
+                  img: "/images/headshoot3.png",
                   stars : 0
             }
       ]
@@ -48,12 +31,13 @@ const OurTeam=()=>{
             className="bg-gray-800 rounded-2xl p-6 shadow-lg relative overflow-hidden"
           >
             <div className="relative h-80 w-full rounded-2xl overflow-hidden">
+                            <div className="absolute inset-0  bg-gradient-to-r from-blue-600 to-green-500 opacity-20 rotate-45 -translate-y-20"></div>
+
               <img
                 src={member.img}
                 alt={member.name}
                 className="object-cover w-full h-full rounded-2xl border-4 border-blue-500"
               />
-              <div className="absolute inset-0 bg-yellow-400 opacity-20 rotate-45 -translate-y-20"></div>
             </div>
             <h3 className="text-2xl font-semibold mt-6">
               {member.name.split(" ")[0]} <span className="text-blue-500">{member.name.split(" ")[1]}</span>

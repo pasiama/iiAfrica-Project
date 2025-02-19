@@ -4,8 +4,10 @@ import BenefitsSection from "@/components/BenefitsSection";
 import About from "@/components/About";
 import EducationLevels from "@/components/EducationLevels"
 import OurTeam from "@/components/OurTeam"
-
-
+import ApplySection from "@/components/ApplySection";
+import RecommendationSection from "@/components/Recommendation";
+import ClientRecommendation from "@/components/ClientRecommendation";
+import Footer from "@/components/footer";
 
 export default function LandingPage() {
   return (
@@ -44,7 +46,11 @@ export default function LandingPage() {
 
       <About />
       <EducationLevels/>
+      <RecommendationSection/>
       <OurTeam/>
+      <ApplySection/>
+      <ClientRecommendation/>
+      <Footer/>
     </div>
   );
 }
