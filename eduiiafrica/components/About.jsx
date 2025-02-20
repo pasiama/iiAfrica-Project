@@ -7,12 +7,19 @@ export default function About() {
     <section className="flex flex-col-reverse lg:flex-row items-center justify-between py-16 px-4 bg-black">
       {/* Text Content */}
       <div className="w-full lg:w-1/2 px-0 lg:px-8 text-center lg:text-left mb-8 lg:mb-0">
-        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">
-          ABOUT US
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        About the Program
         </h2>
+        <p className="text-base md:text-lg text-gray-300 leading-relaxed font-semibold">Master Data Analytics with SkillUp Academy</p>
         <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna a felis tincidunt
-          ullamcorper sit amet ut odio. Curabitur euismod odio vel interdum posuere. Nulla facilisi.
+          Unlock the power of data with our comprehensive Data Analytics
+          Training Program. Designed for beginners and professionals alike, this
+          program equips learners with in-demand data analytics skills using
+          real-world tools and techniques. From understanding data fundamentals
+          to performing complex analyses and creating impactful visualizations,
+          our hands-on curriculum prepares you for a thriving career in the
+          data-driven world. Learn from industry experts, work on live projects,
+          and gain the confidence to turn data insights into strategic decisions
         </p>
       </div>
 
@@ -23,7 +30,7 @@ export default function About() {
         transition={{
           repeat: Infinity,
           duration: 10,
-          ease: "circular",
+          ease: "linear",
         }}
       >
         <img

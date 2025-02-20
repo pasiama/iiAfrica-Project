@@ -3,6 +3,22 @@ import { motion } from "framer-motion";
 
 const levels = [
   {
+    level: "KEY FEATURES",
+    duration: "Expert-Led Curriculum:",
+    durationText: "Learn from top industry professionals with years of data analytics experience",
+    classes: "Hands-On Learning:",
+    classesText: "Engage in real-world projects and case studies to build practical skills.",
+    hours: "Flexible Learning Schedule: ",
+    hoursText: "Self-paced modules designed to fit your lifestyle.",
+    books: "Industry-Recognized Certification:",
+    booksText: "Boost your resume with a certification recognized by leading employers.",
+    features: [
+      "Cutting-Edge Tools & Techniques: Master tools like Python, SQL, Excel, and Tableau that top companies demand.",
+      "Career Support: Access dedicated career guidance, resume reviews, and mock interviews to land your dream job.",
+      "Community of Learners: Join a vibrant network of peers, mentors, and industry leaders for continued learning and growth."
+    ]
+  },
+  {
     level: "ELEMENTARY LEVEL",
     duration: "4",
     durationText: "In just four months, students can gain essential knowledge and skills that prepare them for higher education or specialized career paths.",
@@ -98,7 +114,7 @@ export default function EducationLevelSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        EDUCATION <span className="text-blue-500">LEVEL</span>
+        KEY <span className="text-blue-500">FEATURES</span>
       </motion.h2>
 
       {/* Main Content Grid */}

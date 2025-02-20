@@ -1,24 +1,21 @@
 export const newCourses = [
       {
         id: 1,
-        title: "Photography",
+        title: "Students enrolled",
         lessons: 8,
-        rate: 4.8,
-        type: "Art And Design",
+    
       },
       {
         id: 2,
-        title: "Usability Testing",
+        title: "Active courses",
         lessons: 16,
-        rate: 4.5,
-        type: "UI/UX Design",
+      
       },
       {
         id: 3,
-        title: "Content Writing",
+        title: "Course completion",
         lessons: 12,
-        rate: 5.0,
-        type: "Data Research",
+     
       },
     ];
 
