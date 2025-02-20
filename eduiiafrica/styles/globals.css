@@ -62,6 +62,10 @@ body {
   animation: pulse 3s infinite alternate;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0px 0px 10px var(--electric-blue);
