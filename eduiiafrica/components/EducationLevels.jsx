@@ -134,7 +134,7 @@ export default function EducationLevelSection() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <p className="text-5xl font-extrabold">{current[item]}</p>
+              <p className="text-2xl font-extrabold">{current[item]}</p>
               <p className="text-sm text-white">{current[`${item}Text`]}</p>
             </motion.div>
           ))}

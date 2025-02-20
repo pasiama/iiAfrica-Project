@@ -1,20 +1,3 @@
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar">
-//       <div className="text-xl font-bold text-[var(--gradient-bg)] mx-12">SkillUp Academy</div>
-//       <ul className="flex space-x-6 font-medium mx-12">
-//         <li className="hover:text-[var(--electric-blue)] transition-all mx-">About</li>
-//         <li className="hover:text-[var(--electric-blue)] transition-all ">Courses</li>
-//         <li className="hover:text-[var(--electric-blue)] transition-all ">Contact</li>
-//       </ul>
-//       <button className="btn-outline hover:btn-outline:hover mx-4 ">Login</button>
-//       <button className="btn-outline hover:btn-outline:hover mx-4">Sign Up</button>
-//     </nav>
-//   );
-// };
-// export default Navbar;
-
-
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
@@ -40,13 +23,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="#courses" className="hover:text-[var(--electric-blue)] transition-all">
-              Courses
+            <Link href="#team" className="hover:text-[var(--electric-blue)] transition-all">
+             Team
             </Link>
           </li>
           <li>
-            <Link href="#contact" className="hover:text-[var(--electric-blue)] transition-all">
-              Contact
+            <Link href="#apply" className="hover:text-[var(--electric-blue)] transition-all">
+             Apply
             </Link>
           </li>
         </ul>
@@ -70,13 +53,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="#courses" onClick={toggleMenu} className="block hover:text-[var(--electric-blue)]">
-              Courses
+            <Link href="#team" onClick={toggleMenu} className="block hover:text-[var(--electric-blue)]">
+              Team
             </Link>
           </li>
           <li>
-            <Link href="#contact" onClick={toggleMenu} className="block hover:text-[var(--electric-blue)]">
-              Contact
+            <Link href="#apply" onClick={toggleMenu} className="block hover:text-[var(--electric-blue)]">
+              Apply
             </Link>
           </li>
         </ul>

@@ -21,8 +21,8 @@ const Home = () => {
                 Unlock your potential and embrace the joy of learning at our
                 center, where every step takes you closer to success.
               </p>
-              <button className="btn-gradient px-6 py-3 rounded-lg font-semibold hover:opacity-80 transition-all">
-                Enroll now
+              <button className=" bg-gradient-to-r from-blue-400 to-blue-600 px-6 py-3 rounded-lg font-semibold hover:opacity-80 transition-all">
+                Enroll Toda
               </button>
             </div>
           </div>
