@@ -22,11 +22,11 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="#team" className="hover:text-[var(--electric-blue)] transition-all">
              Team
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="#apply" className="hover:text-[var(--electric-blue)] transition-all">
              Apply
@@ -52,11 +52,11 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="#team" onClick={toggleMenu} className="block hover:text-[var(--electric-blue)]">
               Team
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="#apply" onClick={toggleMenu} className="block hover:text-[var(--electric-blue)]">
               Apply
