@@ -101,7 +101,7 @@ export default function EducationLevelSection() {
 
   return (
     <motion.div
-      className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-8"
+      className="min-h-screen bg-white text-black flex flex-col items-center justify-center p-8"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
@@ -135,7 +135,7 @@ export default function EducationLevelSection() {
               transition={{ duration: 0.3 }}
             >
               <p className="text-2xl font-extrabold">{current[item]}</p>
-              <p className="text-sm text-white">{current[`${item}Text`]}</p>
+              <p className="text-sm text-black">{current[`${item}Text`]}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -191,7 +191,7 @@ export default function EducationLevelSection() {
               transition={{ duration: 0.3 }}
             >
               <div className="w-4 h-4 bg-gradient-to-r from-yellow-400 to-red-400 rounded-full mt-1"></div>
-              <p className="text-sm text-white">{feature}</p>
+              <p className="text-sm text-black">{feature}</p>
             </motion.div>
           ))}
         </motion.div>

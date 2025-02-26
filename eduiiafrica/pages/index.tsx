@@ -68,9 +68,9 @@ export default function LandingPage() {
         <RecommendationSection />
       </section>
 
-      <section id="team">
+      {/* <section id="team">
         <OurTeam />
-      </section>
+      </section> */}
 
       <section id="apply">
         <ApplySection />

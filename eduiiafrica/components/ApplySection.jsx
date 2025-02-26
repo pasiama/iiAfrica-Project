@@ -22,15 +22,15 @@ export default function ApplySection() {
     className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900 text-white bg-cover bg-center"
     style={{ backgroundImage: "url('/images/footer.jpg')" }}
   >
-    <div className="flex flex-col md:flex-row items-center gap-10 p-6 md:p-10 bg-gray-800 rounded-2xl shadow-2xl max-w-6xl w-full">
+    <div className="flex  md:flex-row items-center gap-10 p-6 md:p-10 bg-gray-800 rounded-2xl shadow-2xl max-w-6xl w-full">
       {/* Image Section */}
-      <div className="w-full md:w-1/2">
+      {/* <div className="w-full md:w-1/2">
         <img
           src="/images/footer.jpg"
           alt="Data Analytics Class"
           className="rounded-2xl w-full h-auto object-cover shadow-lg"
         />
-      </div>
+      </div> */}
   
       {/* Text Section */}
       <div className="text-center md:text-left w-full md:w-1/2">
